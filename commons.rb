@@ -5,7 +5,7 @@ server = @user + "@" + @host
 @date = `date +%Y%m%d-%H%M%S`.chomp
 @sshCommand = nil
 if (@usekey) then
-	@sshCommand = ["ssh", "-i", @keylocation, server]
+  @sshCommand = ["ssh", "-i", @keylocation, server]
 else
-	@sshCommand = ["ssh", server]
+  @sshCommand = ["ssh", server]
 end
